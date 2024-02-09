@@ -1,0 +1,65 @@
+.actor-cards-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background-color:#000;
+    margin-top:50px;
+}
+
+.cards-content{
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap:20px;
+    column-gap:40px;
+}
+
+.card{
+width:100%;
+height:600px;
+background-size:cover;
+background-position:50% 50%;
+border-radius:5px;
+cursor:pointer;
+transition:1s;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:0 0 20px 10px;
+color:#fff;
+font-size:17px;
+font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+
+.banner-1{
+    background-image:url('https://crops.giga.de/b5/e4/89/3df2de75d3574bb0800d7bd20f_YyAyNzI4eDE1MzUrMTgrMjkyAnJlIDE2MDAgMTIwMANiNDMyNzM0MDBiMA==.jpg');
+
+}
+
+.banner-2{
+    background-image:url('https://akns-images.eonline.com/eol_images/Entire_Site/202221/rs_1200x1200-220301174506-634-zoe-kravitz-batman.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top');
+
+}
+
+.banner-3{
+    background-image:url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/The-Batman-Jeffrey-Wright-Commissioner-Gordon-Challenge.jpg');
+}
+
+
+
+@media(max-width:768px){
+    .cards-content{
+        grid-template-columns:1fr;
+        margin-top:150px;
+      
+      
+      
+      
+      
+        }
+  }
